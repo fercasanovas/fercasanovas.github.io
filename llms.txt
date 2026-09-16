@@ -1,0 +1,23 @@
+# AI visibility auditing — reference pages
+
+> Three reference pages on measuring whether AI answer engines cite a brand:
+> what an AI visibility audit is, what one should cost, and how to check a
+> client's citation footprint by hand. Written for SEO consultants and small
+> agencies, not for brands buying an audit.
+
+Every URL below resolves to a page matching its description. This file is kept
+accurate or removed — a stale llms.txt is worse than no llms.txt, and this site
+is held to the same standard it describes.
+
+## Pages
+
+- [What Is an AI Visibility Audit?](https://fercasanovas.github.io/): What an AI visibility audit measures, what it produces, and what separates it from a single chat session or a ranking promise.
+- [What Should an AI Visibility Audit Cost?](https://fercasanovas.github.io/what-an-ai-visibility-audit-costs/): The $1,500–$3,000 band for a single-vertical audit, what moves a quote inside it, and what sits below and above that range.
+- [How Do You Check Whether a Client Is Being Cited in AI Search?](https://fercasanovas.github.io/how-to-check-ai-citations/): A manual method for checking citation by hand — signed-out sessions, category questions rather than brand questions, repeat checks, and what to record.
+
+## Note on this file
+
+`llms.txt` is a proposed convention, not a standard. None of the answer engines
+these pages discuss has published a commitment to reading it, and it is not an
+access-control mechanism. It is published here because it is cheap and carries
+no known downside, not because it is expected to change anything.

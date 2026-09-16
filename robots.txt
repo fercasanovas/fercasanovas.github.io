@@ -1,0 +1,37 @@
+# Open to every crawler, and explicit about the ones this site is written for.
+# The named agents below are the four answer-engine surfaces this site's own
+# methodology measures. They are listed individually rather than relying on the
+# wildcard so the intent is legible to a human reading this file.
+
+User-agent: *
+Allow: /
+
+# Google — search, and the separate opt-in that governs AI Overviews / Gemini grounding
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# OpenAI — training crawler, search index, and live user-triggered fetches
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity — index crawler and live user-triggered fetches
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap: https://fercasanovas.github.io/sitemap.xml
