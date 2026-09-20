@@ -2,31 +2,96 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>How Do You Check Whether a Client Is Being Cited in AI Search?</title>
-<meta name="description" content="Sign out, open a private window, and ask ChatGPT, Perplexity, Gemini and Google the same realistic buyer question about the client&amp;#x27;s category — not its nam">
+<meta name="description" content="Sign out, open a private window, and ask ChatGPT, Perplexity, Gemini and Google the same realistic buyer question about the client&amp;#x27;s category — not its n">
 <link rel="canonical" href="https://fercasanovas.github.io/how-to-check-ai-citations/">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
-<style>*{box-sizing:border-box}body{margin:0;background:#fbfaf8;color:#1a1d21;
-font:17px/1.65 Georgia,'Iowan Old Style',serif;-webkit-text-size-adjust:100%}
-.wrap{max-width:46rem;margin:0 auto;padding:3rem 1.25rem 4rem}
-h1{font-size:2.05rem;line-height:1.2;margin:0 0 1.1rem;letter-spacing:-.01em}
-h2{font-size:1.3rem;line-height:1.3;margin:2.6rem 0 .7rem}
-p{margin:0 0 1.05rem}ul{margin:0 0 1.05rem;padding-left:1.15rem}li{margin:0 0 .6rem}
-.meta{font:13px/1.5 -apple-system,Segoe UI,sans-serif;color:#6b7280;margin:0 0 2.2rem;
-padding-bottom:1.2rem;border-bottom:1px solid #e6e2da}
-.lede{font-size:1.16rem}
-code{font:.88em ui-monospace,Menlo,Consolas,monospace;background:#f0ede7;padding:.1em .3em;border-radius:3px}
-hr{border:0;border-top:1px solid #e6e2da;margin:2.8rem 0 1.4rem}
-footer{font:13px/1.6 -apple-system,Segoe UI,sans-serif;color:#6b7280;margin-top:2.6rem;
-padding-top:1.4rem;border-top:1px solid #e6e2da}
-footer a{color:#3d4450}
-@media (prefers-color-scheme:dark){body{background:#14161a;color:#e8e6e1}
-h1,h2{color:#f4f1eb}.meta,footer{color:#98a0ac;border-color:#2b3038}
-code{background:#22262d}hr{border-color:#2b3038}footer a{color:#b9c0cb}}
-@media(max-width:480px){body{font-size:16px}h1{font-size:1.65rem}.wrap{padding:2rem 1.1rem 3rem}}</style>
+<meta property="og:type" content="article">
+<meta property="og:title" content="How Do You Check Whether a Client Is Being Cited in AI Search?">
+<meta property="og:description" content="Sign out, open a private window, and ask ChatGPT, Perplexity, Gemini and Google the same realistic buyer question about the client&amp;#x27;s category — not its n">
+<meta property="og:url" content="https://fercasanovas.github.io/how-to-check-ai-citations/">
+<meta name="twitter:card" content="summary">
+<style>
+:root{
+  --ink:#16181d; --body:#33383f; --muted:#6c7480; --line:#e4e0d8;
+  --paper:#fdfcfa; --raised:#fff; --accent:#a8823c; --accent-soft:#f5efe1;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--body);
+  font:17.5px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif}
+
+.masthead{border-bottom:1px solid var(--line);background:var(--raised)}
+.masthead .inner{max-width:52rem;margin:0 auto;padding:1.05rem 1.5rem;
+  display:flex;align-items:baseline;gap:.75rem;flex-wrap:wrap}
+.brand{font:600 1.02rem/1 Georgia,serif;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.brand span{color:var(--accent)}
+.tagline{font-size:.83rem;color:var(--muted)}
+
+.wrap{max-width:44rem;margin:0 auto;padding:3.5rem 1.5rem 4rem}
+
+h1{font:700 2.5rem/1.14 Georgia,"Iowan Old Style",serif;color:var(--ink);
+  margin:0 0 1.5rem;letter-spacing:-.022em;text-wrap:balance}
+h2{font:600 1.42rem/1.3 Georgia,serif;color:var(--ink);
+  margin:3rem 0 .85rem;letter-spacing:-.012em;text-wrap:balance}
+p{margin:0 0 1.15rem}
+strong{color:var(--ink);font-weight:600}
+ul{margin:0 0 1.15rem;padding-left:0;list-style:none}
+li{margin:0 0 .75rem;padding-left:1.4rem;position:relative}
+li::before{content:"";position:absolute;left:.25rem;top:.72em;
+  width:5px;height:5px;border-radius:50%;background:var(--accent)}
+
+.meta{font-size:.82rem;color:var(--muted);margin:-.75rem 0 2.25rem;
+  padding-bottom:1.4rem;border-bottom:1px solid var(--line);letter-spacing:.01em}
+
+.lede{font-size:1.2rem;line-height:1.6;color:var(--ink);background:var(--accent-soft);
+  border-left:3px solid var(--accent);border-radius:0 6px 6px 0;
+  padding:1.3rem 1.45rem;margin:0 0 2rem}
+
+code{font:.87em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  background:#f1ede5;color:var(--ink);padding:.12em .38em;border-radius:4px}
+hr{border:0;border-top:1px solid var(--line);margin:3rem 0 1.6rem}
+
+.disclaimer{font-size:.84rem;line-height:1.6;color:var(--muted);font-style:italic}
+
+.more{margin-top:3.25rem;padding-top:1.9rem;border-top:1px solid var(--line)}
+.more h3{font:600 .76rem/1 -apple-system,sans-serif;text-transform:uppercase;
+  letter-spacing:.09em;color:var(--muted);margin:0 0 1.1rem}
+.cards{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.card{display:block;padding:1.05rem 1.15rem;background:var(--raised);
+  border:1px solid var(--line);border-radius:8px;text-decoration:none;
+  color:var(--ink);font:600 .96rem/1.4 Georgia,serif;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card em{display:block;font:400 .81rem/1.5 -apple-system,sans-serif;
+  color:var(--muted);margin-top:.35rem;font-style:normal}
+
+.colophon{max-width:44rem;margin:0 auto;padding:0 1.5rem 3.5rem;
+  font-size:.82rem;color:var(--muted)}
+.colophon a{color:var(--accent)}
+
+@media (prefers-color-scheme:dark){
+  :root{--ink:#f2efe9; --body:#c3c8d0; --muted:#8d95a1; --line:#2b3037;
+        --paper:#111317; --raised:#171a1f; --accent:#d4a94f; --accent-soft:#1e1c16}
+  code{background:#22262d}
+}
+@media(max-width:560px){
+  body{font-size:16.5px}
+  h1{font-size:1.95rem}
+  h2{font-size:1.25rem;margin-top:2.4rem}
+  .wrap{padding:2.35rem 1.15rem 3rem}
+  .lede{font-size:1.1rem;padding:1.1rem 1.15rem}
+  .masthead .inner{padding:.9rem 1.15rem}
+  .colophon{padding:0 1.15rem 2.5rem}
+}
+</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "How Do You Check Whether a Client Is Being Cited in AI Search?", "description": "Sign out, open a private window, and ask ChatGPT, Perplexity, Gemini and Google the same realistic buyer question about the client&#x27;s category — not its name. Note whether the client appears, where, and how it&#x27;s described. Check again a day or two later: a single check tells you what happen", "author": {"@type": "Organization", "name": "CassaInnova", "url": "https://fercasanovas.github.io"}, "publisher": {"@type": "Organization", "name": "CassaInnova"}, "datePublished": "2026-09-16", "dateModified": "2026-09-16", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://fercasanovas.github.io/how-to-check-ai-citations/"}, "inLanguage": "en"}, {"@type": "Organization", "name": "CassaInnova", "url": "https://fercasanovas.github.io"}]}</script>
-</head><body><main class="wrap"><article>
+</head><body>
+<header class="masthead"><div class="inner">
+<a class="brand" href="/">Cassa<span>Innova</span></a>
+<span class="tagline">Measuring brand visibility in AI answers</span>
+</div></header>
+<main class="wrap"><article>
 <h1>How Do You Check Whether a Client Is Being Cited in AI Search?</h1>
-<p class="meta">By CassaInnova &middot; Last updated 16 September 2026</p>
+<p class="meta">By CassaInnova &middot; Updated 20 September 2026</p>
 <p class="lede">Sign out, open a private window, and ask ChatGPT, Perplexity, Gemini and Google the same realistic buyer question about the client&#x27;s category — not its name. Note whether the client appears, where, and how it&#x27;s described. Check again a day or two later: a single check tells you what happened once, not what&#x27;s true.</p>
 <h2>What&#x27;s the Fastest Way to Check Whether a Client Is Being Cited?</h2>
 <p>The fastest honest version of this check starts with a private browser window, not the one open all day.</p>
@@ -50,5 +115,7 @@ code{background:#22262d}hr{border-color:#2b3038}footer a{color:#b9c0cb}}
 <hr>
 <p><em>No specific citation, ranking, or traffic outcome is guaranteed for any brand; answer engines select their sources using undisclosed criteria that change without notice. ChatGPT, Perplexity, Gemini and Google are trademarks of their respective owners; this page is independent and not affiliated with, endorsed by, or sponsored by any of them.</em></p>
 </article>
-<footer><a href="/">What Is an AI Visibility Audit?</a> &middot; <a href="/what-an-ai-visibility-audit-costs/">What Should an AI Visibility Audit Cost?</a> &middot; <a href="/why-ai-results-change/">Why Do AI Search Results Change Between Runs?</a> &middot; <a href="/reproducible-numbers/">Why a Reproducible Number Beats a Confident One</a></footer>
-</main></body></html>
+<nav class="more"><h3>Related</h3><div class="cards"><a class="card" href="/">What Is an AI Visibility Audit?<em>What it measures, and what it is not.</em></a><a class="card" href="/what-an-ai-visibility-audit-costs/">What Should an AI Visibility Audit Cost?<em>The $1,500-$3,000 band, and what moves a quote inside it.</em></a><a class="card" href="/why-ai-results-change/">Why Do AI Search Results Change Between Runs?<em>Why the same question returns different answers.</em></a><a class="card" href="/reproducible-numbers/">Why a Reproducible Number Beats a Confident One<em>Why a checkable number beats a confident one.</em></a></div></nav>
+</main>
+<div class="colophon">Written by CassaInnova, which publishes the AI Visibility Audit Kit &mdash; a complete methodology for running and selling an AI visibility audit. <a href="https://cassanova260.gumroad.com/l/ai-visibility-audit-kit">See the kit</a>.</div>
+</body></html>
