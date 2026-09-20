@@ -12,8 +12,10 @@ is held to the same standard it describes.
 ## Pages
 
 - [What Is an AI Visibility Audit?](https://fercasanovas.github.io/): What an AI visibility audit measures, what it produces, and what separates it from a single chat session or a ranking promise.
-- [What Should an AI Visibility Audit Cost?](https://fercasanovas.github.io/what-an-ai-visibility-audit-costs/): The $1,500–$3,000 band for a single-vertical audit, what moves a quote inside it, and what sits below and above that range.
-- [How Do You Check Whether a Client Is Being Cited in AI Search?](https://fercasanovas.github.io/how-to-check-ai-citations/): A manual method for checking citation by hand — signed-out sessions, category questions rather than brand questions, repeat checks, and what to record.
+- [What Should an AI Visibility Audit Cost?](https://fercasanovas.github.io/what-an-ai-visibility-audit-costs/): The $1,500-$3,000 band for a single-vertical audit, what moves a quote inside it, and what sits below and above that range.
+- [How Do You Check Whether a Client Is Being Cited in AI Search?](https://fercasanovas.github.io/how-to-check-ai-citations/): A manual method for checking citation by hand - signed-out sessions, category questions rather than brand questions, repeat checks, and what to record.
+- [Why Do AI Search Results Change Between Runs?](https://fercasanovas.github.io/why-ai-results-change/): Why the same question returns different answers on different days, and what that means for anyone promising a citation.
+- [Why a Reproducible Number Beats a Confident One](https://fercasanovas.github.io/reproducible-numbers/): Why a marketing number a client can check for themselves is worth more than a confident one, and what an evidence trail actually is.
 
 ## Note on this file
 
