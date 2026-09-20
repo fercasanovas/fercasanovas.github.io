@@ -50,7 +50,16 @@ h1{font:700 var(--f-h1)/1.08 Georgia,"Iowan Old Style",serif;color:var(--ink);
   margin:0 0 var(--s2);letter-spacing:-.028em;text-wrap:balance;max-width:16ch}
 h2{font:600 var(--f-h2)/1.28 Georgia,serif;color:var(--ink);
   margin:var(--s4) 0 var(--s2);letter-spacing:-.014em;text-wrap:balance}
+h3{font:600 1.16rem/1.35 -apple-system,"Segoe UI",sans-serif;color:var(--ink);
+  margin:var(--s3) 0 .6rem;letter-spacing:-.005em}
+h4{font:650 .95rem/1.4 -apple-system,sans-serif;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.07em;margin:var(--s3) 0 .5rem}
 p{margin:0 0 var(--s2);text-wrap:pretty}
+ol{margin:0 0 var(--s2);padding-left:0;list-style:none;counter-reset:n}
+ol li{counter-increment:n}
+ol li::before{content:counter(n);background:none;color:var(--accent);
+  font:650 .85rem/1 -apple-system,sans-serif;width:auto;height:auto;
+  border-radius:0;top:.35em;left:.15rem}
 strong{color:var(--ink);font-weight:650}
 ul{margin:0 0 var(--s2);padding-left:0;list-style:none}
 li{margin:0 0 .8rem;padding-left:1.5rem;position:relative}
@@ -68,6 +77,8 @@ li::before{content:"";position:absolute;left:.3rem;top:.75em;
 code{font:.86em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   background:#f2ede3;color:var(--ink);padding:.12em .4em;border-radius:4px}
 hr{border:0;border-top:1px solid var(--line);margin:var(--s4) 0 var(--s3)}
+blockquote{margin:var(--s3) 0;padding:0 0 0 1.4rem;border-left:3px solid var(--accent);
+  font:1.18rem/1.55 Georgia,serif;color:var(--ink)}
 .tablewrap{overflow-x:auto;margin:var(--s3) 0}
 table{border-collapse:collapse;width:100%;font-size:.95rem;line-height:1.55}
 th{text-align:left;font:600 .78rem/1.3 -apple-system,sans-serif;text-transform:uppercase;
@@ -145,7 +156,7 @@ tr td:first-child{font-weight:650;color:var(--ink);white-space:nowrap}
 <li><strong>Scale.</strong> About twelve buyer questions, four intent types, four platforms — roughly 48 individually tracked results.</li>
 <li><strong>Site check.</strong> Roughly twenty-five checks across five areas, feeding a 0–100 composite from four named sub-scores.</li>
 </ul>
-<p>### The four intent types</p>
+<h3>The four intent types</h3>
 <ul>
 <li><strong>Browsing.</strong> No vendor named yet — what are the options.</li>
 <li><strong>Comparing.</strong> Two named brands, side by side.</li>

@@ -50,7 +50,16 @@ h1{font:700 var(--f-h1)/1.08 Georgia,"Iowan Old Style",serif;color:var(--ink);
   margin:0 0 var(--s2);letter-spacing:-.028em;text-wrap:balance;max-width:16ch}
 h2{font:600 var(--f-h2)/1.28 Georgia,serif;color:var(--ink);
   margin:var(--s4) 0 var(--s2);letter-spacing:-.014em;text-wrap:balance}
+h3{font:600 1.16rem/1.35 -apple-system,"Segoe UI",sans-serif;color:var(--ink);
+  margin:var(--s3) 0 .6rem;letter-spacing:-.005em}
+h4{font:650 .95rem/1.4 -apple-system,sans-serif;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.07em;margin:var(--s3) 0 .5rem}
 p{margin:0 0 var(--s2);text-wrap:pretty}
+ol{margin:0 0 var(--s2);padding-left:0;list-style:none;counter-reset:n}
+ol li{counter-increment:n}
+ol li::before{content:counter(n);background:none;color:var(--accent);
+  font:650 .85rem/1 -apple-system,sans-serif;width:auto;height:auto;
+  border-radius:0;top:.35em;left:.15rem}
 strong{color:var(--ink);font-weight:650}
 ul{margin:0 0 var(--s2);padding-left:0;list-style:none}
 li{margin:0 0 .8rem;padding-left:1.5rem;position:relative}
@@ -68,6 +77,8 @@ li::before{content:"";position:absolute;left:.3rem;top:.75em;
 code{font:.86em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   background:#f2ede3;color:var(--ink);padding:.12em .4em;border-radius:4px}
 hr{border:0;border-top:1px solid var(--line);margin:var(--s4) 0 var(--s3)}
+blockquote{margin:var(--s3) 0;padding:0 0 0 1.4rem;border-left:3px solid var(--accent);
+  font:1.18rem/1.55 Georgia,serif;color:var(--ink)}
 .tablewrap{overflow-x:auto;margin:var(--s3) 0}
 table{border-collapse:collapse;width:100%;font-size:.95rem;line-height:1.55}
 th{text-align:left;font:600 .78rem/1.3 -apple-system,sans-serif;text-transform:uppercase;
@@ -142,7 +153,7 @@ tr td:first-child{font-weight:650;color:var(--ink);white-space:nowrap}
 <p>The difference only shows up the moment someone tries to verify one of them. They find either a documented trail leading back to a specific, checkable observation — or nothing behind the number but the person who produced it.</p>
 <h2>What Should Be Inside an Audit Report Besides the Final Score?</h2>
 <p>A final score alone is a conclusion with the reasoning stripped out — a report that stops there is asking to be trusted, not checked. Three things belong alongside it.</p>
-<p>### Three things</p>
+<h3>Three things</h3>
 <ul>
 <li><strong>The date range or window.</strong> These measurements move over time; a number without its window quietly becomes a claim about a present that&#x27;s already gone stale.</li>
 <li><strong>A prioritized fix list.</strong> Ordered by what actually blocks the outcome, not what&#x27;s easiest to write about.</li>
@@ -159,7 +170,7 @@ tr td:first-child{font-weight:650;color:var(--ink);white-space:nowrap}
 <p>That&#x27;s not because the underlying work was sloppy. It&#x27;s because the number was built to be delivered rather than checked, with nothing behind it the client could look at themselves. A consultant who can open the actual evidence at that moment changes the conversation — from trusting an assertion to accepting what&#x27;s sitting in front of both of them.</p>
 <h2>What Is an Evidence Trail, Specifically?</h2>
 <p>An evidence trail is the record of exactly what was checked — saved so a client, or a skeptical colleague, could verify it without redoing the audit from scratch. At minimum, that means four things.</p>
-<p>### Four things to record</p>
+<h3>Four things to record</h3>
 <ul>
 <li><strong>The exact question or check performed.</strong></li>
 <li><strong>The platform or source it ran against.</strong></li>

@@ -50,7 +50,16 @@ h1{font:700 var(--f-h1)/1.08 Georgia,"Iowan Old Style",serif;color:var(--ink);
   margin:0 0 var(--s2);letter-spacing:-.028em;text-wrap:balance;max-width:16ch}
 h2{font:600 var(--f-h2)/1.28 Georgia,serif;color:var(--ink);
   margin:var(--s4) 0 var(--s2);letter-spacing:-.014em;text-wrap:balance}
+h3{font:600 1.16rem/1.35 -apple-system,"Segoe UI",sans-serif;color:var(--ink);
+  margin:var(--s3) 0 .6rem;letter-spacing:-.005em}
+h4{font:650 .95rem/1.4 -apple-system,sans-serif;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.07em;margin:var(--s3) 0 .5rem}
 p{margin:0 0 var(--s2);text-wrap:pretty}
+ol{margin:0 0 var(--s2);padding-left:0;list-style:none;counter-reset:n}
+ol li{counter-increment:n}
+ol li::before{content:counter(n);background:none;color:var(--accent);
+  font:650 .85rem/1 -apple-system,sans-serif;width:auto;height:auto;
+  border-radius:0;top:.35em;left:.15rem}
 strong{color:var(--ink);font-weight:650}
 ul{margin:0 0 var(--s2);padding-left:0;list-style:none}
 li{margin:0 0 .8rem;padding-left:1.5rem;position:relative}
@@ -68,6 +77,8 @@ li::before{content:"";position:absolute;left:.3rem;top:.75em;
 code{font:.86em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   background:#f2ede3;color:var(--ink);padding:.12em .4em;border-radius:4px}
 hr{border:0;border-top:1px solid var(--line);margin:var(--s4) 0 var(--s3)}
+blockquote{margin:var(--s3) 0;padding:0 0 0 1.4rem;border-left:3px solid var(--accent);
+  font:1.18rem/1.55 Georgia,serif;color:var(--ink)}
 .tablewrap{overflow-x:auto;margin:var(--s3) 0}
 table{border-collapse:collapse;width:100%;font-size:.95rem;line-height:1.55}
 th{text-align:left;font:600 .78rem/1.3 -apple-system,sans-serif;text-transform:uppercase;
@@ -139,7 +150,7 @@ tr td:first-child{font-weight:650;color:var(--ink);white-space:nowrap}
 <figure class="fig"><svg viewBox="0 0 496 140" role="img" aria-labelledby="t-b d-b"><title id="t-b">Where an audit sits on price</title><desc id="d-b">A tool report runs $250 to $500, a single-vertical audit $1,500 to $3,000, an agency retainer $8,000 a month and up.</desc><line x1="20" y1="96" x2="476" y2="96" class="ln"/><circle cx="73" cy="96" r="4" class="miss"/><rect x="20" y="26" width="106" height="54" rx="7" class="box"/><text x="73" y="50" text-anchor="middle" class="lbl">Tool report</text><text x="73" y="65" text-anchor="middle" class="sub">$250&#8211;$500</text><line x1="73" y1="80" x2="73" y2="90" class="ln"/><circle cx="257" cy="96" r="6" class="dot"/><rect x="198" y="26" width="118" height="54" rx="7" class="box-a"/><text x="257" y="50" text-anchor="middle" class="lbl">This audit</text><text x="257" y="65" text-anchor="middle" class="sub">$1,500&#8211;$3,000</text><line x1="257" y1="80" x2="257" y2="90" class="ln-a"/><circle cx="443" cy="96" r="4" class="miss"/><rect x="390" y="26" width="106" height="54" rx="7" class="box"/><text x="443" y="50" text-anchor="middle" class="lbl">Agency retainer</text><text x="443" y="65" text-anchor="middle" class="sub">$8k+/month</text><line x1="443" y1="80" x2="443" y2="90" class="ln"/><text x="248" y="126" text-anchor="middle" class="sub">Hours of measurement, not brand positioning, set the band</text></svg><figcaption>Below the band a tool stands in for a person; above it, most of the fee is overhead.</figcaption></figure>
 <h2>What Determines Where in the $1,500–$3,000 Range a Quote Lands?</h2>
 <p>Two things move a quote inside the range — not how well a consultant negotiates.</p>
-<p>### The two factors</p>
+<h3>The two factors</h3>
 <ul>
 <li><strong>Scope size.</strong> A smaller, single-competitive-set list sits near the bottom of the range; a bigger battery — more questions, deeper competitor coverage — sits near the top, because the range tracks hours actually spent, not negotiation.</li>
 <li><strong>Existing information.</strong> A client with an already-documented category, competitor list, and priority pages costs less setup time than a brand-new prospect — and that difference should show in the quote, not the fee.</li>
@@ -163,7 +174,7 @@ tr td:first-child{font-weight:650;color:var(--ink);white-space:nowrap}
 <p>None of that compresses to an hour — that&#x27;s why the floor of this range sits where it does.</p>
 <h2>Is a Monthly Retainer the Right Model for This Work?</h2>
 <p>Usually not — the arithmetic decides it, not a stylistic preference.</p>
-<p>### Retainer vs. single audit</p>
+<h3>Retainer vs. single audit</h3>
 <div class="tablewrap"><table><tr><th></th><th>Retainer</th><th>Single audit, priced right</th></tr><tr><td>Cadence</td><td>Monthly billing</td><td>Roughly every 90 days — enough time for a fix list to ship and a re-measurement to mean something</td></tr><tr><td>Typical price</td><td>$1,000–$2,500/month for an entry-level search program</td><td>A few hundred dollars a month once a single audit fee is annualized</td></tr><tr><td>What it buys</td><td>Work between measurements</td><td>The measurement itself</td></tr></table></div>
 <p>The more defensible model: quote a baseline audit, then quote the follow-up separately, at roughly the same fee, when it&#x27;s due. That&#x27;s different from packaging a quarterly instrument as if it were a monthly service.</p>
 <hr>
