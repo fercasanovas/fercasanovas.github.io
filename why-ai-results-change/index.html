@@ -82,6 +82,19 @@ hr{border:0;border-top:1px solid var(--line);margin:3rem 0 1.6rem}
   .masthead .inner{padding:.9rem 1.15rem}
   .colophon{padding:0 1.15rem 2.5rem}
 }
+
+.fig{margin:2.4rem 0;padding:1.6rem 1.4rem 1.3rem;background:var(--raised);
+  border:1px solid var(--line);border-radius:10px}
+.fig svg{display:block;width:100%;height:auto;overflow:visible}
+.fig figcaption{margin-top:1rem;font-size:.82rem;line-height:1.55;color:var(--muted);text-align:center}
+.fig .lbl{font:600 12.5px -apple-system,"Segoe UI",sans-serif;fill:var(--ink)}
+.fig .sub{font:11.5px -apple-system,"Segoe UI",sans-serif;fill:var(--muted)}
+.fig .box{fill:var(--paper);stroke:var(--line);stroke-width:1.5}
+.fig .box-a{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.5}
+.fig .ln{stroke:var(--line);stroke-width:1.5;fill:none}
+.fig .ln-a{stroke:var(--accent);stroke-width:2;fill:none}
+.fig .dot{fill:var(--accent)}
+.fig .miss{fill:var(--muted);opacity:.45}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Why Do AI Search Results Change Between Runs?", "description": "Answer engines like ChatGPT, Perplexity, Gemini, and Google&#x27;s AI Overviews can give different answers to the same question asked twice. They aren&#x27;t deterministic, and personalization differs by session. Model updates, index refreshes, and account history can move the result with nothing on", "author": {"@type": "Organization", "name": "CassaInnova", "url": "https://fercasanovas.github.io"}, "publisher": {"@type": "Organization", "name": "CassaInnova"}, "datePublished": "2026-09-16", "dateModified": "2026-09-16", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://fercasanovas.github.io/why-ai-results-change/"}, "inLanguage": "en"}, {"@type": "Organization", "name": "CassaInnova", "url": "https://fercasanovas.github.io"}]}</script>
 </head><body>
@@ -93,6 +106,7 @@ hr{border:0;border-top:1px solid var(--line);margin:3rem 0 1.6rem}
 <h1>Why Do AI Search Results Change Between Runs?</h1>
 <p class="meta">By CassaInnova &middot; Updated 20 September 2026</p>
 <p class="lede">Answer engines like ChatGPT, Perplexity, Gemini, and Google&#x27;s AI Overviews can give different answers to the same question asked twice. They aren&#x27;t deterministic, and personalization differs by session. Model updates, index refreshes, and account history can move the result with nothing on the brand&#x27;s site changing. One answer confirms nothing; a pattern checked over time does.</p>
+<figure class="fig"><svg viewBox="0 0 496 166" role="img" aria-labelledby="t-d d-d"><title id="t-d">The same question on three days</title><desc id="d-d">The same question about the same brand returns a citation on some runs and not others, with nothing on the site changing.</desc><text x="8" y="18" class="sub">Same question, same brand, three days</text><text x="8" y="52" class="lbl">Monday</text><rect x="116" y="32" width="76" height="30" rx="6" class="box-a"/><text x="154" y="52" text-anchor="middle" class="lbl">cited</text><rect x="204" y="32" width="76" height="30" rx="6" class="box-a"/><text x="242" y="52" text-anchor="middle" class="lbl">cited</text><rect x="292" y="32" width="76" height="30" rx="6" class="box"/><text x="330" y="52" text-anchor="middle" class="sub">absent</text><text x="8" y="94" class="lbl">Tuesday</text><rect x="116" y="74" width="76" height="30" rx="6" class="box"/><text x="154" y="94" text-anchor="middle" class="sub">absent</text><rect x="204" y="74" width="76" height="30" rx="6" class="box-a"/><text x="242" y="94" text-anchor="middle" class="lbl">cited</text><rect x="292" y="74" width="76" height="30" rx="6" class="box-a"/><text x="330" y="94" text-anchor="middle" class="lbl">cited</text><text x="8" y="136" class="lbl">Wednesday</text><rect x="116" y="116" width="76" height="30" rx="6" class="box-a"/><text x="154" y="136" text-anchor="middle" class="lbl">cited</text><rect x="204" y="116" width="76" height="30" rx="6" class="box"/><text x="242" y="136" text-anchor="middle" class="sub">absent</text><rect x="292" y="116" width="76" height="30" rx="6" class="box"/><text x="330" y="136" text-anchor="middle" class="sub">absent</text><text x="392" y="52" class="sub">Nothing on</text><text x="392" y="68" class="sub">the brand's</text><text x="392" y="84" class="sub">site changed.</text></svg><figcaption>One check tells you what happened once. It does not tell you what is true.</figcaption></figure>
 <h2>Why Does ChatGPT Give Different Answers to the Same Question?</h2>
 <p>ChatGPT, Perplexity, Gemini, and Google&#x27;s AI Overviews don&#x27;t run a fixed lookup against a static index. They don&#x27;t return the same passage every time. Each response is generated fresh. A retrieval step decides which sources are even available to draw from at that moment. A language model then composes the answer from them, with no obligation to reach the same conclusion twice.</p>
 <p>Two answers to the identical question, asked minutes apart, can differ in wording, in which sources are cited, and in whether a brand is mentioned at all. That&#x27;s ordinary behavior for these systems, not a malfunction. It isn&#x27;t evidence that anything about the brand changed between the two checks.</p>
