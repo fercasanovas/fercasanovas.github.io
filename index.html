@@ -44,7 +44,7 @@ body{margin:0;background:var(--paper);color:var(--body);
   padding:var(--s5) 1.5rem;row-gap:0}
 .wrap > *, article > *{grid-column:2}
 article{display:contents}
-.fig, .more{grid-column:1/-1;justify-self:center;width:min(var(--wide),100%)}
+.fig, .more, .tablewrap{grid-column:1/-1;justify-self:center;width:min(var(--wide),100%)}
 
 h1{font:700 var(--f-h1)/1.08 Georgia,"Iowan Old Style",serif;color:var(--ink);
   margin:0 0 var(--s2);letter-spacing:-.028em;text-wrap:balance;max-width:16ch}
@@ -68,6 +68,15 @@ li::before{content:"";position:absolute;left:.3rem;top:.75em;
 code{font:.86em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   background:#f2ede3;color:var(--ink);padding:.12em .4em;border-radius:4px}
 hr{border:0;border-top:1px solid var(--line);margin:var(--s4) 0 var(--s3)}
+.tablewrap{overflow-x:auto;margin:var(--s3) 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem;line-height:1.55}
+th{text-align:left;font:600 .78rem/1.3 -apple-system,sans-serif;text-transform:uppercase;
+  letter-spacing:.06em;color:var(--muted);padding:0 1rem .7rem 0;
+  border-bottom:2px solid var(--accent);vertical-align:bottom}
+td{padding:.85rem 1rem .85rem 0;border-bottom:1px solid var(--line);vertical-align:top}
+tr td:first-child{font-weight:650;color:var(--ink);white-space:nowrap}
+@media(max-width:600px){tr td:first-child{white-space:normal}table{font-size:.9rem}}
+
 .disclaimer{font-size:.83rem;line-height:1.6;color:var(--muted)}
 
 .more{margin-top:var(--s5);padding-top:var(--s3);border-top:1px solid var(--line)}
@@ -141,7 +150,7 @@ hr{border:0;border-top:1px solid var(--line);margin:var(--s4) 0 var(--s3)}
 <p>It is not a guarantee. No credible version of this service promises a brand will be cited, will rank, or will appear in a given answer. The engines select sources using criteria they don&#x27;t publish, and they change those criteria without notice. Anyone promising a specific outcome is promising something nobody can deliver — not even the platforms themselves.</p>
 <h2>How Is an AI Visibility Audit Different From a Regular SEO Audit?</h2>
 <p>A technical SEO audit and an AI visibility audit overlap at the edges. They answer different questions.</p>
-<p>| | Traditional SEO audit | AI visibility audit | | --- | --- | --- | | Core question | Does this page rank in search results? | Does an answer engine name this brand when asked? | | Unit measured | Rankings, backlinks, page speed, crawl errors | Citation, characterization, and source footprint across four answer engines | | Output | A list of on-page and technical fixes | A scored result plus a prioritized fix list, tied to logged evidence | | Where they overlap | Crawlability and indexability matter to both | A complete audit checks whether AI-specific crawlers can read a site — a separate question from whether Googlebot can |</p>
+<div class="tablewrap"><table><tr><th></th><th>Traditional SEO audit</th><th>AI visibility audit</th></tr><tr><td>Core question</td><td>Does this page rank in search results?</td><td>Does an answer engine name this brand when asked?</td></tr><tr><td>Unit measured</td><td>Rankings, backlinks, page speed, crawl errors</td><td>Citation, characterization, and source footprint across four answer engines</td></tr><tr><td>Output</td><td>A list of on-page and technical fixes</td><td>A scored result plus a prioritized fix list, tied to logged evidence</td></tr><tr><td>Where they overlap</td><td>Crawlability and indexability matter to both</td><td>A complete audit checks whether AI-specific crawlers can read a site — a separate question from whether Googlebot can</td></tr></table></div>
 <p>The overlap is real and worth naming plainly: a site an AI crawler cannot fetch is invisible to both problems, for the same underlying reason. But a technically flawless SEO site can still be poorly described, or entirely absent, in an AI-generated answer. Clean crawlability is necessary. It is nowhere near sufficient.</p>
 <h2>What Does a Consultant Deliver at the End of an AI Visibility Audit?</h2>
 <p>A finished AI visibility audit produces three things a client can act on immediately.</p>
