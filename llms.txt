@@ -1,21 +1,42 @@
-# AI visibility auditing — reference pages
+# AI visibility auditing - reference pages
 
-> Three reference pages on measuring whether AI answer engines cite a brand:
-> what an AI visibility audit is, what one should cost, and how to check a
-> client's citation footprint by hand. Written for SEO consultants and small
-> agencies, not for brands buying an audit.
+> 22 reference pages on measuring whether AI answer engines cite a brand.
+> Written for SEO consultants and small agencies, not for brands buying an audit.
 
 Every URL below resolves to a page matching its description. This file is kept
-accurate or removed — a stale llms.txt is worse than no llms.txt, and this site
+accurate or removed - a stale llms.txt is worse than no llms.txt, and this site
 is held to the same standard it describes.
 
-## Pages
+## Understanding it
 
-- [What Is an AI Visibility Audit?](https://fercasanovas.github.io/): What an AI visibility audit measures, what it produces, and what separates it from a single chat session or a ranking promise.
-- [What Should an AI Visibility Audit Cost?](https://fercasanovas.github.io/what-an-ai-visibility-audit-costs/): The $1,500-$3,000 band for a single-vertical audit, what moves a quote inside it, and what sits below and above that range.
-- [How Do You Check Whether a Client Is Being Cited in AI Search?](https://fercasanovas.github.io/how-to-check-ai-citations/): A manual method for checking citation by hand - signed-out sessions, category questions rather than brand questions, repeat checks, and what to record.
-- [Why Do AI Search Results Change Between Runs?](https://fercasanovas.github.io/why-ai-results-change/): Why the same question returns different answers on different days, and what that means for anyone promising a citation.
-- [Why a Reproducible Number Beats a Confident One](https://fercasanovas.github.io/reproducible-numbers/): Why a marketing number a client can check for themselves is worth more than a confident one, and what an evidence trail actually is.
+- [What Is an AI Visibility Audit?](https://fercasanovas.github.io/): An AI visibility audit checks whether ChatGPT, Perplexity, Gemini, and Google's AI Overviews name a brand...
+- [AEO vs GEO vs SEO: What the Terms Actually Mean](https://fercasanovas.github.io/aeo-vs-geo-vs-seo/): AEO and GEO are two names for the same practice: getting named inside an AI-generated answer.
+- [Which AI Platforms Should You Measure?](https://fercasanovas.github.io/which-ai-platforms-to-measure/): Track ChatGPT, Perplexity, Gemini, and Google's AI Overviews — the four platforms an SEO consultant...
+- [What Counts as a Citation in an AI Answer?](https://fercasanovas.github.io/what-counts-as-a-citation/): A citation is any place an AI-generated answer names, quotes, links to, or clearly draws from a specific...
+- [Why AI Search Traffic Does Not Show Up in Your Analytics](https://fercasanovas.github.io/ai-traffic-in-analytics/): AI answer engines rarely send a click, so GA4 has almost nothing to attribute to them.
+- [Is AI Visibility Worth Measuring Yet?](https://fercasanovas.github.io/is-ai-visibility-worth-measuring/): For some clients, yes; for others, not yet.
+
+## Doing the work
+
+- [How Do You Check Whether a Client Is Being Cited in AI Search?](https://fercasanovas.github.io/how-to-check-ai-citations/): Sign out, open a private window, and ask ChatGPT, Perplexity, Gemini and Google the same realistic buyer...
+- [Why Do AI Search Results Change Between Runs?](https://fercasanovas.github.io/why-ai-results-change/): Answer engines like ChatGPT, Perplexity, Gemini, and Google's AI Overviews can give different answers to...
+- [How Do You Build a Prompt Set to Test a Client's AI Visibility?](https://fercasanovas.github.io/building-a-prompt-set/): Write a small set of realistic category questions, never the client's brand name.
+- [Does llms.txt Actually Do Anything?](https://fercasanovas.github.io/does-llms-txt-work/): No platform has committed to reading it.
+- [How Do You Check Whether AI Crawlers Can Read a Site?](https://fercasanovas.github.io/ai-crawler-access/): Load the site with a crawler's user agent instead of a browser's.
+- [Does Schema Markup Affect Whether AI Cites a Site?](https://fercasanovas.github.io/schema-and-ai-citation/): Nobody has published proof that schema markup directly causes an AI engine to cite a site — that link...
+- [A Brand Vanished From AI Answers. What Happened?](https://fercasanovas.github.io/brand-disappeared-from-ai-answers/): A brand missing from an answer it used to appear in usually isn't one thing.
+- [How Often Should You Re-Measure AI Visibility?](https://fercasanovas.github.io/how-often-to-measure/): There's no fixed interval that's right for every client.
+
+## Selling the work
+
+- [What Should an AI Visibility Audit Cost?](https://fercasanovas.github.io/what-an-ai-visibility-audit-costs/): An AI visibility audit runs $1,500 to $3,000 as a one-time engagement, covering one brand, one domain and...
+- [Why a Reproducible Number Beats a Confident One](https://fercasanovas.github.io/reproducible-numbers/): A marketing number is worth more when a client can reproduce it — the same question, checked again,...
+- [How Do You Scope an AI Visibility Engagement?](https://fercasanovas.github.io/scoping-an-engagement/): Scoping an AI visibility engagement means fixing four facts before you quote: the domain, the category...
+- [What Should Go in an AI Visibility Audit Report?](https://fercasanovas.github.io/what-goes-in-the-report/): A complete AI visibility audit report has four parts: a scope statement, a scored result, a fix list, and...
+- [The Client Asks: Can You Guarantee We'll Be Cited?](https://fercasanovas.github.io/can-you-guarantee-citation/): No — and nobody can, including the platforms themselves.
+- [Should You Sell an AI Visibility Audit as a Retainer or a One-Off?](https://fercasanovas.github.io/retainer-or-one-off/): Sell it as a one-off, re-quoted at ninety days — not a monthly retainer.
+- [How Do You Add a New Service to an Agency's Pricing?](https://fercasanovas.github.io/adding-a-service-line/): Add it as a fixed-fee line beside your existing technical audit, not folded into an hourly rate or an...
+- [The Client Already Pays for an AI Visibility Tool. Now What?](https://fercasanovas.github.io/client-already-has-a-tool/): Keep the tool running — it's not a competitor to what an audit does, it's a different instrument for a...
 
 ## Note on this file
 
