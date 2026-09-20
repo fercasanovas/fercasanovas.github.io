@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>We Checked 50 B2B SaaS Sites for AI Crawler Access. Here Is What We Found</title>
+<meta name="description" content="Two-thirds publish an llms.txt — a convention no AI platform has committed to reading. Only 17% name a single AI crawler in robots.txt, the file that actually">
+<link rel="canonical" href="https://fercasanovas.github.io/ai-crawler-access-study/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="We Checked 50 B2B SaaS Sites for AI Crawler Access. Here Is What We Found">
+<meta property="og:description" content="Two-thirds publish an llms.txt — a convention no AI platform has committed to reading. Only 17% name a single AI crawler in robots.txt, the file that actually">
+<meta property="og:url" content="https://fercasanovas.github.io/ai-crawler-access-study/">
+<meta name="twitter:card" content="summary">
+<style>
+/* Type scale is a 1.25 major third off a 17.5px body, so sizes relate rather than
+   being picked one at a time. Prose sits at ~66 characters per line (Bringhurst's
+   45-75, optimum 66); diagrams and cards break out wider via the grid below. */
+:root{
+  /* 60-30-10: warm paper dominates, navy carries structure, gold is the accent
+     only. Every value below clears WCAG AA on its own background -- the previous
+     muted grey (4.34) and gold (4.02) did not. */
+  --ink:#16243a; --body:#39414c; --muted:#5f6874; --line:#e4dfd5;
+  --paper:#fcfbf8; --raised:#fff; --navy:#16243a; --navy-deep:#101b2c;
+  --accent:#8a6a22; --accent-soft:#f6f1e3; --on-navy:#e8e4dc;
+  --measure:36rem; --wide:52rem;
+  --s1:.5rem; --s2:1rem; --s3:1.75rem; --s4:2.75rem; --s5:4.5rem;
+  --f-body:1.094rem; --f-h2:1.709rem; --f-h1:3.052rem; --f-lede:1.367rem;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--body);
+  font:var(--f-body)/1.72 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;
+  font-synthesis:none;text-rendering:optimizeLegibility}
+
+.masthead{background:var(--navy);border-bottom:3px solid var(--accent)}
+.masthead .inner{max-width:var(--wide);margin:0 auto;padding:1.1rem 1.5rem;
+  display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap}
+.brand{font:600 1.08rem/1 Georgia,serif;color:#fff;text-decoration:none;letter-spacing:-.01em}
+.brand span{color:#d9ae52}
+.tagline{font-size:.84rem;color:var(--on-navy);opacity:.72}
+
+/* Breakout grid: prose holds the measure, .fig and .cards span the full width.
+   This is what stops a text column from reading like a wall. */
+.wrap{display:grid;grid-template-columns:1fr min(var(--measure),100%) 1fr;
+  padding:var(--s5) 1.5rem;row-gap:0}
+.wrap > *, article > *{grid-column:2}
+article{display:contents}
+.fig, .more, .tablewrap{grid-column:1/-1;justify-self:center;width:min(var(--wide),100%)}
+
+h1{font:700 var(--f-h1)/1.08 Georgia,"Iowan Old Style",serif;color:var(--ink);
+  margin:0 0 var(--s2);letter-spacing:-.028em;text-wrap:balance;max-width:16ch}
+h2{font:600 var(--f-h2)/1.28 Georgia,serif;color:var(--ink);
+  margin:var(--s4) 0 var(--s2);letter-spacing:-.014em;text-wrap:balance}
+h3{font:600 1.16rem/1.35 -apple-system,"Segoe UI",sans-serif;color:var(--ink);
+  margin:var(--s3) 0 .6rem;letter-spacing:-.005em}
+h4{font:650 .95rem/1.4 -apple-system,sans-serif;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.07em;margin:var(--s3) 0 .5rem}
+p{margin:0 0 var(--s2);text-wrap:pretty}
+ol{margin:0 0 var(--s2);padding-left:0;list-style:none;counter-reset:n}
+ol li{counter-increment:n}
+ol li::before{content:counter(n);background:none;color:var(--accent);
+  font:650 .85rem/1 -apple-system,sans-serif;width:auto;height:auto;
+  border-radius:0;top:.35em;left:.15rem}
+strong{color:var(--ink);font-weight:650}
+ul{margin:0 0 var(--s2);padding-left:0;list-style:none}
+li{margin:0 0 .8rem;padding-left:1.5rem;position:relative}
+li::before{content:"";position:absolute;left:.3rem;top:.75em;
+  width:5px;height:5px;border-radius:50%;background:var(--accent)}
+
+.meta{font-size:.8rem;color:var(--muted);margin:0 0 var(--s3);
+  text-transform:uppercase;letter-spacing:.075em}
+
+/* The lede is the page's single focal point: it gets space, not just size. */
+.lede{font:var(--f-lede)/1.55 Georgia,serif;color:var(--ink);
+  border-left:4px solid var(--accent);background:var(--accent-soft);
+  border-radius:0 8px 8px 0;padding:var(--s3) 1.5rem;margin:0 0 var(--s3)}
+
+code{font:.86em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  background:#f2ede3;color:var(--ink);padding:.12em .4em;border-radius:4px}
+hr{border:0;border-top:1px solid var(--line);margin:var(--s4) 0 var(--s3)}
+blockquote{margin:var(--s3) 0;padding:0 0 0 1.4rem;border-left:3px solid var(--accent);
+  font:1.18rem/1.55 Georgia,serif;color:var(--ink)}
+.tablewrap{overflow-x:auto;margin:var(--s3) 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem;line-height:1.55}
+th{text-align:left;font:600 .78rem/1.3 -apple-system,sans-serif;text-transform:uppercase;
+  letter-spacing:.06em;color:var(--muted);padding:0 1rem .7rem 0;
+  border-bottom:2px solid var(--accent);vertical-align:bottom}
+td{padding:.85rem 1rem .85rem 0;border-bottom:1px solid var(--line);vertical-align:top}
+tr td:first-child{font-weight:650;color:var(--ink);white-space:nowrap}
+@media(max-width:600px){tr td:first-child{white-space:normal}table{font-size:.9rem}}
+
+.disclaimer{font-size:.83rem;line-height:1.6;color:var(--muted)}
+
+.cta{grid-column:1/-1;justify-self:center;width:min(var(--wide),100%);
+  margin:var(--s5) 0 0;padding:var(--s4) var(--s3);background:var(--navy);
+  border-radius:12px;color:var(--on-navy)}
+.cta-kicker{font:650 .72rem/1 -apple-system,sans-serif;text-transform:uppercase;
+  letter-spacing:.11em;color:#d9ae52;margin:0 0 .85rem}
+.cta-lead{font:1.12rem/1.6 Georgia,serif;color:#fff;margin:0 0 var(--s3);max-width:42ch}
+.cta-lead strong{color:#fff;font-weight:700}
+.cta-btn{display:inline-block;background:#d9ae52;color:#16243a;text-decoration:none;
+  font:700 1rem/1 -apple-system,sans-serif;padding:.95rem 1.6rem;border-radius:7px;
+  transition:transform .15s ease,background .15s ease}
+.cta-btn:hover{background:#e8bf63;transform:translateY(-1px)}
+.cta-under{font:.86rem/1.5 -apple-system,sans-serif;color:var(--on-navy);
+  opacity:.78;margin:.9rem 0 0}
+@media(max-width:600px){.cta{padding:var(--s3) 1.2rem;border-radius:10px}
+  .cta-lead{font-size:1.04rem}.cta-btn{display:block;text-align:center}}
+
+.more{margin-top:var(--s5);padding-top:var(--s3);border-top:1px solid var(--line)}
+.more h3{font:600 .74rem/1 -apple-system,sans-serif;text-transform:uppercase;
+  letter-spacing:.1em;color:var(--muted);margin:0 0 var(--s2)}
+.cards{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.card{display:block;padding:1.15rem 1.25rem;background:var(--raised);
+  border:1px solid var(--line);border-radius:9px;text-decoration:none;
+  color:var(--ink);font:600 1rem/1.35 Georgia,serif;
+  transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease}
+.card:hover{border-color:var(--navy);transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(22,36,58,.09)}
+.card em{display:block;font:400 .82rem/1.5 -apple-system,sans-serif;
+  color:var(--muted);margin-top:.4rem;font-style:normal}
+
+.colophon{max-width:var(--wide);margin:0 auto;padding:0 1.5rem var(--s5);background:transparent;
+  font-size:.83rem;line-height:1.65;color:var(--muted);
+  border-top:1px solid var(--line);padding-top:var(--s3)}
+.colophon a{color:var(--accent);text-underline-offset:2px}
+
+@media (prefers-color-scheme:dark){
+  :root{--ink:#f3f0ea; --body:#c6cbd3; --muted:#959daa; --line:#272d36;
+        --paper:#0e1116; --raised:#161a21; --navy:#16243a; --navy-deep:#0b1320;
+        --accent:#d9ae52; --accent-soft:#1c1a14; --on-navy:#e8e4dc}
+  code{background:#22262d}
+  .card:hover{box-shadow:0 6px 22px rgba(0,0,0,.3)}
+}
+@media(max-width:600px){
+  :root{--f-h1:2.1rem; --f-h2:1.4rem; --f-lede:1.2rem; --s5:2.6rem; --s4:2rem}
+  body{font-size:16.5px}
+  .wrap{padding:var(--s5) 1.15rem}
+  .masthead .inner{padding:.95rem 1.15rem}
+  .colophon{padding-left:1.15rem;padding-right:1.15rem}
+  h1{max-width:none}
+}
+
+.fig{margin:2.4rem 0;padding:1.6rem 1.4rem 1.3rem;background:var(--raised);
+  border:1px solid var(--line);border-radius:10px}
+.fig svg{display:block;width:100%;height:auto;overflow:visible}
+.fig figcaption{margin-top:1rem;font-size:.82rem;line-height:1.55;color:var(--muted);text-align:center}
+.fig .lbl{font:600 12.5px -apple-system,"Segoe UI",sans-serif;fill:var(--ink)}
+.fig .sub{font:11.5px -apple-system,"Segoe UI",sans-serif;fill:var(--muted)}
+.fig .box{fill:var(--paper);stroke:var(--line);stroke-width:1.5}
+.fig .box-a{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.5}
+.fig .ln{stroke:var(--line);stroke-width:1.5;fill:none}
+.fig .ln-a{stroke:var(--accent);stroke-width:2;fill:none}
+.fig .dot{fill:var(--accent)}
+.fig .miss{fill:var(--muted);opacity:.45}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "We Checked 50 B2B SaaS Sites for AI Crawler Access. Here Is What We Found", "description": "Two-thirds publish an llms.txt — a convention no AI platform has committed to reading. Only 17% name a single AI crawler in robots.txt, the file that actually governs access. Companies are adopting the new thing faster than they are managing the established one.", "author": {"@type": "Organization", "name": "CassaInnova", "url": "https://fercasanovas.github.io"}, "publisher": {"@type": "Organization", "name": "CassaInnova"}, "datePublished": "2026-09-16", "dateModified": "2026-09-16", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://fercasanovas.github.io/ai-crawler-access-study/"}, "inLanguage": "en"}, {"@type": "Organization", "name": "CassaInnova", "url": "https://fercasanovas.github.io"}]}</script>
+</head><body>
+<header class="masthead"><div class="inner">
+<a class="brand" href="/">Cassa<span>Innova</span></a>
+<span class="tagline">Measuring brand visibility in AI answers</span>
+</div></header>
+<main class="wrap"><article>
+<h1>We Checked 50 B2B SaaS Sites for AI Crawler Access. Here Is What We Found</h1>
+<p class="meta">By CassaInnova &middot; Updated 20 September 2026</p>
+<p class="lede">Two-thirds publish an <code>llms.txt</code> — a convention no AI platform has committed to reading. Only 17% name a single AI crawler in <code>robots.txt</code>, the file that actually governs access. Companies are adopting the new thing faster than they are managing the established one.</p>
+<figure class="fig"><svg viewBox="0 0 496 218" role="img" aria-labelledby="t-w d-w"><title id="t-w">Across fifty B2B SaaS sites: 66% publish llms.txt, but only 17% name any AI crawler in robots.txt.</title><desc id="d-w">Across fifty B2B SaaS sites: 66% publish llms.txt, but only 17% name any AI crawler in robots.txt.</desc><text x="8" y="30" class="lbl">Publish an llms.txt</text><rect x="288" y="8" width="200" height="30" rx="6" class="box-a"/><text x="388" y="28" text-anchor="middle" class="lbl">33 of 50  (66%)</text><text x="8" y="72" class="lbl">Any homepage JSON-LD</text><rect x="288" y="50" width="200" height="30" rx="6" class="box-a"/><text x="388" y="70" text-anchor="middle" class="lbl">33 of 50  (66%)</text><text x="8" y="114" class="lbl">Organization schema</text><rect x="288" y="92" width="200" height="30" rx="6" class="box-a"/><text x="388" y="112" text-anchor="middle" class="lbl">24 of 50  (48%)</text><text x="8" y="156" class="lbl">Name any AI crawler</text><rect x="288" y="134" width="200" height="30" rx="6" class="box"/><text x="388" y="154" text-anchor="middle" class="sub">8 of 47  (17%)</text><text x="8" y="198" class="lbl">Block any AI crawler</text><rect x="288" y="176" width="200" height="30" rx="6" class="box"/><text x="388" y="196" text-anchor="middle" class="sub">2 of 47  (4%)</text></svg><figcaption>Adoption of an unratified convention runs four times ahead of managing the file that actually governs access.</figcaption></figure>
+<h2>What Was Measured, and How</h2>
+<p><strong>Fifty widely-known B2B SaaS and marketing companies</strong>, measured on 21 September 2026. These are companies whose buyers plausibly ask an AI assistant for recommendations.</p>
+<p>Only public files were read:</p>
+<ul>
+<li><strong><code>robots.txt</code></strong> — present, parseable, and what it says about eight named AI crawlers.</li>
+<li><strong><code>llms.txt</code></strong> — present and served as real text, not a soft 404 dressed as one.</li>
+<li><strong>Homepage JSON-LD</strong> — what structured data types appear.</li>
+</ul>
+<p>Nothing behind a login. Nothing republished. <strong>No company is named as failing anything</strong> — only aggregate counts appear below.</p>
+<h3>The honest limits of this sample</h3>
+<ul>
+<li><strong>Fifty is a sample, not a census.</strong> These are large, well-resourced companies. A local dentist&#x27;s site will look nothing like this.</li>
+<li><strong>Three of the fifty</strong> had no usable <code>robots.txt</code>, so crawler percentages below are of 47.</li>
+<li><strong>A <code>robots.txt</code> rule is a request, not a wall.</strong> It records intent, not enforcement.</li>
+<li><strong>This measures readability, not citation.</strong> Whether these companies are actually named in AI answers is a separate question that this data does not touch.</li>
+</ul>
+<h2>How Many Sites Block AI Crawlers?</h2>
+<p><strong>Almost none. Two of 47.</strong></p>
+<div class="tablewrap"><table><tr><th>Finding</th><th>Count</th><th>Share</th></tr><tr><td>Block at least one AI crawler</td><td>2 of 47</td><td>4%</td></tr><tr><td>Name any AI crawler explicitly</td><td>8 of 47</td><td>17%</td></tr><tr><td>Say nothing about AI crawlers at all</td><td>39 of 47</td><td>83%</td></tr></table></div>
+<p><strong>The blocking panic did not happen.</strong> The story of publishers shutting out AI crawlers is real for news media. Among B2B SaaS companies selling to buyers who research with AI assistants, it is not happening.</p>
+<p><strong>But 83% silence is not a decision.</strong> It is the absence of one. Those sites are readable by default, which is probably what they want — they just have not said so.</p>
+<h3>What that means for an audit</h3>
+<p><strong>A client whose <code>robots.txt</code> says nothing about AI crawlers is in the majority.</strong> That is worth telling them plainly, because it reframes the finding.</p>
+<p>The question is not &quot;why are we blocking?&quot; It is &quot;have we ever decided?&quot;</p>
+<h2>Which Crawlers Are Named Most Often?</h2>
+<div class="tablewrap"><table><tr><th>Crawler</th><th>Allowed</th><th>Blocked</th><th>Unmentioned</th></tr><tr><td>GPTBot</td><td>5</td><td>1</td><td>41</td></tr><tr><td>ClaudeBot</td><td>5</td><td>1</td><td>41</td></tr><tr><td>OAI-SearchBot</td><td>4</td><td>1</td><td>42</td></tr><tr><td>ChatGPT-User</td><td>4</td><td>1</td><td>42</td></tr><tr><td>PerplexityBot</td><td>4</td><td>1</td><td>42</td></tr><tr><td>Google-Extended</td><td>4</td><td>1</td><td>42</td></tr><tr><td>Perplexity-User</td><td>3</td><td>0</td><td>44</td></tr><tr><td>CCBot</td><td>2</td><td>2</td><td>43</td></tr></table></div>
+<p><strong>CCBot is the only one blocked more than it is allowed.</strong> It feeds training datasets rather than a live answer surface, and the sites that distinguish between the two treat it differently.</p>
+<h2>Why Is llms.txt Adoption So High?</h2>
+<p><strong>Thirty-three of fifty publish one. That is 66%</strong> — roughly four times the rate at which the same companies explicitly manage AI crawler access in <code>robots.txt</code>.</p>
+<p>Each was fetched and checked to be real text, because a site returning its homepage for any unknown path would otherwise be counted as publishing one. All were genuine.</p>
+<p><strong>This is the finding worth sitting with.</strong> <code>llms.txt</code> is a proposed convention. No standards body has ratified it.</p>
+<p>No major platform has published a commitment to reading it. It is not access control, and nothing is obliged to respect it.</p>
+<p>It is being adopted anyway, at scale, by companies with real engineering budgets.</p>
+<h3>Two readings, and the honest answer is probably both</h3>
+<ul>
+<li><strong>Cheap insurance.</strong> An hour of work, no known downside, and a position if adoption arrives. That is the same reasoning <a href="/does-llms-txt-work/">this site&#x27;s own page on llms.txt</a> reaches.</li>
+<li><strong>Visible effort.</strong> Publishing one is legible to a board in a way that editing <code>robots.txt</code> is not.</li>
+</ul>
+<p><strong>Neither reading makes it effective.</strong> Adoption is not evidence that anything reads the file. It is evidence that the cost is low.</p>
+<h2>What About Structured Data?</h2>
+<div class="tablewrap"><table><tr><th>Finding</th><th>Count</th><th>Share</th></tr><tr><td>Any JSON-LD on the homepage</td><td>33 of 50</td><td>66%</td></tr><tr><td><code>Organization</code> schema specifically</td><td>24 of 50</td><td>48%</td></tr></table></div>
+<p><strong>Under half declare who they are in machine-readable form.</strong> For companies this size that is lower than expected. Entity clarity is also one of the few things a consultant can fix quickly and verifiably, whatever it turns out to be worth for citation.</p>
+<h2>What a Consultant Can Do With This</h2>
+<ul>
+<li><strong>Check the client&#x27;s <code>robots.txt</code> first.</strong> Most say nothing, and &quot;nothing&quot; is a finding worth reporting as a decision not yet taken.</li>
+<li><strong>Do not lead with <code>llms.txt</code>.</strong> Two-thirds of large SaaS companies publish one and no platform has committed to reading it. It is cheap, so it belongs at the bottom of a fix list, not the top.</li>
+<li><strong>Check <code>Organization</code> schema.</strong> Half of these companies are missing it, so a smaller client very likely is too.</li>
+<li><strong>Do not confuse readable with cited.</strong> Everything here measures whether a site can be read. Whether it is named in an answer is a different measurement entirely, and it is <a href="/how-to-check-ai-citations/">checked by asking the platforms directly</a>.</li>
+</ul>
+<h2>Reproducing This</h2>
+<p><strong>The script is public and the domain list is in the repository.</strong> Anyone can re-run it and get their own numbers, which is the point — a finding nobody can reproduce is a claim, not a result.</p>
+<p>Re-running it in six months would be more interesting than running it once. The <code>llms.txt</code> number in particular is a bet on a convention, and bets resolve.</p>
+<hr>
+<p><em>No specific citation, ranking, or traffic outcome is guaranteed for any brand; answer engines select their sources using undisclosed criteria that change without notice. ChatGPT, Perplexity, Gemini and Google are trademarks of their respective owners; this page is independent and not affiliated with, endorsed by, or sponsored by any of them.</em></p>
+</article>
+<aside class="cta"><p class="cta-kicker">The method behind this page</p><p class="cta-lead">This is the measurement approach, described. <strong>The AI Visibility Audit Kit is the method itself</strong> &mdash; 24 files, six industry prompt batteries, the scoring formula with a worked example, a white-label client report and the sales assets to quote the engagement.</p><a class="cta-btn" href="https://cassanova260.gumroad.com/l/ai-visibility-audit-kit">See what is inside &rarr;</a><p class="cta-under">$149 once. No subscription. Less than a tenth of what the first audit it enables is worth.</p></aside>
+<nav class="more"><h3>Related</h3><div class="cards"><a class="card" href="/">What Is an AI Visibility Audit?<em>An AI visibility audit checks whether ChatGPT, Perplexity, Gemini, and Google&#x27;s AI Overviews name a brand...</em></a><a class="card" href="/aeo-vs-geo-vs-seo/">AEO vs GEO vs SEO: What the Terms Actually Mean<em>AEO and GEO are two names for the same practice: getting named inside an AI-generated answer.</em></a><a class="card" href="/which-ai-platforms-to-measure/">Which AI Platforms Should You Measure?<em>Track ChatGPT, Perplexity, Gemini, and Google&#x27;s AI Overviews — the four platforms an SEO consultant...</em></a></div></nav>
+</main>
+<div class="colophon">Written by CassaInnova, which publishes the AI Visibility Audit Kit &mdash; a complete methodology for running and selling an AI visibility audit. <a href="https://cassanova260.gumroad.com/l/ai-visibility-audit-kit">See the kit</a>.</div>
+</body></html>

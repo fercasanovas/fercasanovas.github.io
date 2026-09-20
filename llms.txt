@@ -1,6 +1,6 @@
 # AI visibility auditing - reference pages
 
-> 22 reference pages on measuring whether AI answer engines cite a brand.
+> 23 reference pages on measuring whether AI answer engines cite a brand.
 > Written for SEO consultants and small agencies, not for brands buying an audit.
 
 Every URL below resolves to a page matching its description. This file is kept
@@ -15,6 +15,7 @@ is held to the same standard it describes.
 - [What Counts as a Citation in an AI Answer?](https://fercasanovas.github.io/what-counts-as-a-citation/): A citation is any place an AI-generated answer names, quotes, links to, or clearly draws from a specific...
 - [Why AI Search Traffic Does Not Show Up in Your Analytics](https://fercasanovas.github.io/ai-traffic-in-analytics/): AI answer engines rarely send a click, so GA4 has almost nothing to attribute to them.
 - [Is AI Visibility Worth Measuring Yet?](https://fercasanovas.github.io/is-ai-visibility-worth-measuring/): For some clients, yes; for others, not yet.
+- [We Checked 50 B2B SaaS Sites for AI Crawler Access. Here Is What We Found](https://fercasanovas.github.io/ai-crawler-access-study/): Two-thirds publish an llms.txt — a convention no AI platform has committed to reading.
 
 ## Doing the work
 
