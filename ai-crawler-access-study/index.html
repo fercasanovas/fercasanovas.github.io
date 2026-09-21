@@ -187,8 +187,9 @@ tr td:first-child{font-weight:650;color:var(--ink);white-space:nowrap}
 <h2>How Many Sites Block AI Crawlers?</h2>
 <p><strong>Almost none. Two of 47.</strong></p>
 <div class="tablewrap"><table><tr><th>Finding</th><th>Count</th><th>Share</th></tr><tr><td>Block at least one AI crawler</td><td>2 of 47</td><td>4%</td></tr><tr><td>Name any AI crawler explicitly</td><td>8 of 47</td><td>17%</td></tr><tr><td>Say nothing about AI crawlers at all</td><td>39 of 47</td><td>83%</td></tr></table></div>
-<p><strong>The blocking panic did not happen.</strong> The story of publishers shutting out AI crawlers is real for news media. Among B2B SaaS companies selling to buyers who research with AI assistants, it is not happening.</p>
-<p><strong>But 83% silence is not a decision.</strong> It is the absence of one. Those sites are readable by default, which is probably what they want — they just have not said so.</p>
+<p><strong>The blocking panic didn&#x27;t happen.</strong> The story of publishers shutting out AI crawlers is real for news media. Among B2B SaaS companies selling to buyers who research with AI assistants, it isn&#x27;t happening.</p>
+<p><strong>But 83% silence isn&#x27;t a decision.</strong> It&#x27;s the absence of one.</p>
+<p>Those sites are readable by default, which is probably what they want. They just haven&#x27;t said so.</p>
 <h3>What that means for an audit</h3>
 <p><strong>A client whose <code>robots.txt</code> says nothing about AI crawlers is in the majority.</strong> That is worth telling them plainly, because it reframes the finding.</p>
 <p>The question is not &quot;why are we blocking?&quot; It is &quot;have we ever decided?&quot;</p>
@@ -198,27 +199,27 @@ tr td:first-child{font-weight:650;color:var(--ink);white-space:nowrap}
 <h2>Why Is llms.txt Adoption So High?</h2>
 <p><strong>Thirty-three of fifty publish one. That is 66%</strong> — roughly four times the rate at which the same companies explicitly manage AI crawler access in <code>robots.txt</code>.</p>
 <p>Each was fetched and checked to be real text, because a site returning its homepage for any unknown path would otherwise be counted as publishing one. All were genuine.</p>
-<p><strong>This is the finding worth sitting with.</strong> <code>llms.txt</code> is a proposed convention. No standards body has ratified it.</p>
+<p><code>llms.txt</code> is a proposed convention. No standards body has ratified it.</p>
 <p>No major platform has published a commitment to reading it. It is not access control, and nothing is obliged to respect it.</p>
 <p>It is being adopted anyway, at scale, by companies with real engineering budgets.</p>
-<h3>Two readings, and the honest answer is probably both</h3>
+<h3>Two reasons, and they&#x27;re not exclusive</h3>
 <ul>
-<li><strong>Cheap insurance.</strong> An hour of work, no known downside, and a position if adoption arrives. That is the same reasoning <a href="/does-llms-txt-work/">this site&#x27;s own page on llms.txt</a> reaches.</li>
+<li><strong>Cheap insurance.</strong> An hour&#x27;s work, no known downside, and you&#x27;re covered if adoption arrives. That is the same reasoning <a href="/does-llms-txt-work/">this site&#x27;s own page on llms.txt</a> reaches.</li>
 <li><strong>Visible effort.</strong> Publishing one is legible to a board in a way that editing <code>robots.txt</code> is not.</li>
 </ul>
-<p><strong>Neither reading makes it effective.</strong> Adoption is not evidence that anything reads the file. It is evidence that the cost is low.</p>
+<p><strong>Neither of those makes it effective.</strong> Adoption is not evidence that anything reads the file. It is evidence that the cost is low.</p>
 <h2>What About Structured Data?</h2>
 <div class="tablewrap"><table><tr><th>Finding</th><th>Count</th><th>Share</th></tr><tr><td>Any JSON-LD on the homepage</td><td>33 of 50</td><td>66%</td></tr><tr><td><code>Organization</code> schema specifically</td><td>24 of 50</td><td>48%</td></tr></table></div>
 <p><strong>Under half declare who they are in machine-readable form.</strong> For companies this size that is lower than expected. Entity clarity is also one of the few things a consultant can fix quickly and verifiably, whatever it turns out to be worth for citation.</p>
 <h2>What a Consultant Can Do With This</h2>
 <ul>
 <li><strong>Check the client&#x27;s <code>robots.txt</code> first.</strong> Most say nothing, and &quot;nothing&quot; is a finding worth reporting as a decision not yet taken.</li>
-<li><strong>Do not lead with <code>llms.txt</code>.</strong> Two-thirds of large SaaS companies publish one and no platform has committed to reading it. It is cheap, so it belongs at the bottom of a fix list, not the top.</li>
+<li><strong>Don&#x27;t lead with <code>llms.txt</code>.</strong> Two-thirds of large SaaS companies publish one and no platform has committed to reading it. It is cheap, so it belongs at the bottom of a fix list, not the top.</li>
 <li><strong>Check <code>Organization</code> schema.</strong> Half of these companies are missing it, so a smaller client very likely is too.</li>
-<li><strong>Do not confuse readable with cited.</strong> Everything here measures whether a site can be read. Whether it is named in an answer is a different measurement entirely, and it is <a href="/how-to-check-ai-citations/">checked by asking the platforms directly</a>.</li>
+<li><strong>Don&#x27;t confuse readable with cited.</strong> Everything here measures whether a site can be read. Whether it is named in an answer is a different measurement entirely, and it is <a href="/how-to-check-ai-citations/">checked by asking the platforms directly</a>.</li>
 </ul>
 <h2>Reproducing This</h2>
-<p><strong>The script is public and the domain list is in the repository.</strong> Anyone can re-run it and get their own numbers, which is the point — a finding nobody can reproduce is a claim, not a result.</p>
+<p><strong>The script is public and the domain list is in the repository.</strong> Anyone can re-run it and get their own numbers, which is the point — a finding nobody can reproduce isn&#x27;t a result, it&#x27;s a claim.</p>
 <p>Re-running it in six months would be more interesting than running it once. The <code>llms.txt</code> number in particular is a bet on a convention, and bets resolve.</p>
 <hr>
 <p><em>No specific citation, ranking, or traffic outcome is guaranteed for any brand; answer engines select their sources using undisclosed criteria that change without notice. ChatGPT, Perplexity, Gemini and Google are trademarks of their respective owners; this page is independent and not affiliated with, endorsed by, or sponsored by any of them.</em></p>
